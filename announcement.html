@@ -14,6 +14,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoin
 </script>
 <style type="text/css">
 h3 {font-weight: bold;}
+.grid-3 {margin-top: 28px; margin-bottom: 28px;}
+#page-title {margin-top: 48px;}
 </style>
 </head>
 
@@ -115,8 +117,8 @@ h3 {font-weight: bold;}
       </div> <!-- /#page-heading -->
 
       <div id="column-left" class="grid-12">
-<div class="grid-12 alpha omega">
-  <img src="d7-screenshot.png" style="float: right; margin-left: 20px;" alt="Drupal 7 Screenshot" />
+<div class="grid-12 alpha omega" style="margin-top: 10px;">
+  <img src="d7-screenshot.png" style="float: right; margin-left: 20px; margin-top: 24px;" alt="Drupal 7 Screenshot" />
   <h2>Ready and able to drive your most demanding projects with ease. Built for both high-end performance and ease of use.</h2>
   <h2>After two and a half years of development by over 1,000 contributors, we proudly present Drupal 7: the best version of Drupal yet.</h2>
   <a href="#" class="link-button" style="margin-left: 100px; margin-top: 24px;"><span>Download</span></a>
@@ -139,6 +141,7 @@ h3 {font-weight: bold;}
   <h3>Built to scale</h3>
   <p>Optimize your site for high speed and huge amounts of traffic, with improved JavaScript and CSS optimization, better caching, master/slave replication, reverse-proxy and content delivery network support. </p>
 </div>
+
 <div class="grid-6 alpha clear">
 
 <h2>Here's how to get started</h2>
@@ -146,28 +149,35 @@ h3 {font-weight: bold;}
 
 </div>
 <div class="grid-6 omega">
+  <div class="grid-3 alpha">
+    <h3>Installation</h3>
+      <ul>
+        <li><a href="http://drupal.org/documentation/install/basic">Basic installation guide</a></li>
+        <li><a href="http://drupal.org/node/996592">Quick install guide for beginners</a></li>
+        <li><a href="http://drupal.org/documentation/install/developers">Quick install for developers (Command line)</a></li>
+      </ul>
 
-  <h3>Installation</h3>
-<ul>
-<li><a href="http://drupal.org/documentation/install/basic">Basic installation guide</a></li>
-<li><a href="http://drupal.org/node/996592">Quick install guide for beginners</a></li>
-<li><a href="http://drupal.org/documentation/install/developers">Quick install for developers (Command line)</a></li></ul>
+    <h3>Upgrading</h3>
+      <p>Your Drupal 6 site can be upgraded to Drupal 7, once Drupal 7 versions of all modules and themes it uses are available.  Over <a href="http://drupal.org/project/modules?filters=drupal_core%3A103&amp;solrsort=sort_title%20asc">800 modules</a> are already there for Drupal 7.</p>
+      <ul>
+        <li><a href="http://drupal.org/documentation/upgrade/6/7">Upgrade guide</a></li>
+      </ul>
+  </div>
+  <div class="grid-3 omega">
+    <h3>Documentation</h3>
 
-  <h3>Upgrading</h3>
-  <p>Your Drupal 6 site can be upgraded to Drupal 7, once Drupal 7 versions of all modules and themes it uses are available.  Over <a href="http://drupal.org/project/modules?filters=drupal_core%3A103&amp;solrsort=sort_title%20asc">800 modules</a> are already there for Drupal 7.</p>
-  <ul><li><a href="http://drupal.org/documentation/upgrade/6/7">Upgrade guide</a>.</li></ul>
-
-  <h3>Documentation</h3>
-
-<p>Want to learn more?  Check out:</p>
-<ul><li><a href="http://drupal.org/getting-started/7/admin">Drupal 7 Administrator's Guide</a></li>
-<li><a href="http://api.drupal.org/api/drupal/7">Drupal 7 API</a></li>
-<li><a href="http://drupal.org/node/361112">Creating modules for Drupal 7</a></li>
-<li><a href="http://drupal.org/node/224333">Converting 6.x modules to Drupal 7</a></li>
-<li><a href="http://drupal.org/node/254940">Converting 6.x themes to Drupal 7</a></li>
-<li><a href="http://drupal.org/theme-guide/6-7">Theming Drupal 6 and 7</a></li>
-</ul>  
+    <p>Want to learn more?  Check out:</p>
+      <ul>
+        <li><a href="http://drupal.org/getting-started/7/admin">Drupal 7 Administrator's Guide</a></li>
+        <li><a href="http://api.drupal.org/api/drupal/7">Drupal 7 API</a></li>
+        <li><a href="http://drupal.org/node/361112">Creating modules for Drupal 7</a></li>
+        <li><a href="http://drupal.org/node/224333">Converting 6.x modules to Drupal 7</a></li>
+        <li><a href="http://drupal.org/node/254940">Converting 6.x themes to Drupal 7</a></li>
+        <li><a href="http://drupal.org/theme-guide/6-7">Theming Drupal 6 and 7</a></li>
+      </ul>  
+  </div>
 </div>
+
 
 <div class="grid-3 alpha" style="clear: both;">
   <h3>Test driven development</h3>
@@ -187,24 +197,31 @@ h3 {font-weight: bold;}
   <p>Everything used to be a node. Not anymore. </p>
 <p>Everything is an entity now. Build your feature-set as fields that you can use on users, nodes, comments, taxonomy terms and more.</p>
 </div>
+<div class="grid-12 alpha omega">
+  <h2>Stretch beyond the horizon</h2>
+  <div class="grid-6 alpha">
+    <div class="grid-3 alpha" style="clear: both;">
+      <h3>Install profiles</h3>
+      <p>You can really make them now [NEEDS TEXT].</p>
+    </div>
+    <div class="grid-3 omega">
+      <h3>New API's</h3>
+        <p>Our field, session, queue, lock, caching, logging and many other sub-systems are pluggable, with support already available for <a href="http://drupal.org/project/mongodb">MongoDB</a>, <a href="http://drupal.org/project/beanstalkd">Beanstalkd</a>, <a href="http://drupal.org/project/memcache">Memcache</a> and more.</p>
+    </div>
+    <div class="grid-3 alpha">
+      <h3>Accessibility</h3>
+      <p>Far more accessible [NEEDS TEXT].</p>
+    </div>    
+    <div class="grid-3 omega">
+      <h3>Extend</h3>
+      <p>something about ported modules...</p>    
+    </div>
+  </div>
 
-<div class="grid-3 alpha" style="clear: both;">
-<h3>Install profiles</h3>
-<p>You can really make them now [NEEDS TEXT].</p>
+  <div class="grid-6 omega">
+    <img src="admin-screenshot-small.jpg" alt="Screenshot of the Administration Interface" />
+  </div>
 </div>
-<div class="grid-3">
-<h3>New API's</h3>
-<p>Our field, session, queue, lock, caching, logging and many other sub-systems are pluggable, with support already available for <a href="http://drupal.org/project/mongodb">MongoDB</a>, <a href="http://drupal.org/project/beanstalkd">Beanstalkd</a>, <a href="http://drupal.org/project/memcache">Memcache</a> and more.</p>
-</div>
-<div class="grid-3">
-<h3>Accessibility</h3>
-<p>Far more accessible [NEEDS TEXT].</p>
-</div>
-<div class="grid-3 omega">
-<h3>Extend</h3>
-<p>something about ported modules...</p>
-</div>
-
 
 <div class="grid-6 alpha clear">
   <h3>See Drupal 7 in action</h3>
@@ -224,7 +241,7 @@ h3 {font-weight: bold;}
   <ul>
     <li><strong>Web Server</strong>: Apache (recommended), Nginx, Lighttpd, or Microsoft IIS</li>
     <li><strong>Database</strong>: MySQL 5.0.15 and higher, PostgreSQL 8.3 and higher, SQLite 3.x</li>
-    <li><strong>PHP</strong>: 5.2.x and higher/li>
+    <li><strong>PHP</strong>: 5.2.x and higher</li>
     <li><strong>Memory</strong>: 32MB</li>
   </ul>
   <p>
