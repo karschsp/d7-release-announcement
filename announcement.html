@@ -13,15 +13,25 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoin
 //--><!]]>
 </script>
 <style type="text/css">
-h3 {font-weight: bold;}
-.grid-3 {margin-top: 28px; margin-bottom: 28px;}
+h3 {
+  font-weight: bold;
+}
+
+.grid-3 {
+  margin-top: 28px; 
+  margin-bottom: 28px;
+}
+
 #page-title {margin-top: 48px;}
+
 #header {
   height: 612px; 
   background-color: #f00; 
   background: url('header-bg.jpg') repeat-x center;
 }
+
 #header-feature {padding-top: 1.6em;}
+
 #header-feature h1, #header-feature h2 {color: #fff;}
 
 #header-feature h1 {
@@ -30,43 +40,56 @@ h3 {font-weight: bold;}
   letter-spacing: .04em;
   margin-bottom: 0.8em;
 }
+
 #header-feature h2 {
   font-weight: 200;
   font-size: 1.4em;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   line-height: 1.4em;
 }
+
 #header-feature img {
   margin-top: 2em;
 }
-#header-feature .grid-12 {
-  padding-left: 10px; 
-  margin-left: 0px; 
-  margin-right: 0px; 
+
+#header-highlight {
   background: #293640;
   background: url('gray-gradient.png');
   background: -moz-linear-gradient(100%, 100%, 90deg, #3f4a51, #293640); 
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3f4a51), to(#293640));
   position: relative; 
   height: 171px;
-  top: 24px;
+  top: 1.6em;
   border-radius: 5px;
   -moz-border-radius: 5px;
+  clear: both;
+  -moz-box-shadow: 0px 4px 2px #888; 
+  -webkit-box-shadow: 0px 4px 4px #ccc; 
+  box-shadow: 0px 4px 2px #888;  
 }
-#header-feature .grid-12 h3 {
+
+#header-highlight-inner .grid-3 {
+  margin-top: 14px;
+}
+
+#header-highlight-inner h3 {
   color: #fff;
   text-shadow: #000 2px 2px 0px;
-  margin-top: -10px;
+  margin-top: 0;
   letter-spacing: .10em;
   font-weight: 400;
 }
 
-#header-feature .grid-12 p {
+#header-highlight-inner p {
   color: #fff;
 }
 
 #nav-masthead {
   border-bottom: 1px solid #227ebf;
+}
+
+#column-left {
+  margin-top: 1.0em;
 }
 </style>
 </head>
@@ -156,27 +179,30 @@ h3 {font-weight: bold;}
       <div class="grid-6 omega">
         <img src="examiner-thumbnail.png" alt="Runs on Drupal 7: Examiner.com" />
       </div>
-      <div class="grid-12">
-        <div class="grid-3 alpha">
-          <h3>Easier to Use</h3>
-          <p>An entirely revamped administrative interface makes getting started with Drupal easier.</p>
-        </div>
-        <div class="grid-3">
-          <h3>More Flexible</h3>
-          <p>Define your own content structure, add multimedia, forms, create your own modules for extra functionality or use one of over 800 we&apos;ve upgraded for Drupal 7 already.</p>
-        </div>
-        <div class="grid-3">
-          <h3>More Scalable</h3>
-          <p>Your Drupal 7 site will be fast, responsive and able to handle huge amounts of traffic thanks to improved JavaScript and CSS optimization, better caching and more.</p>
-        </div>
-        <div class="grid-3 omega">
-          <h3>Open source</h3>
-          <p>Come for the software, stay for the community.  With thousands of contributors involved, Drupal and its themes, modules, and distributions are continuously improved.</p>
-        </div>
-      </div>
-    </div> <!-- /#header-feature -->
     
     </div> <!-- /#header-inner -->
+    
+    <div id="header-highlight" class="grid-16">
+      <div id="header-highlight-inner" class="grid-12">
+          <div class="grid-3 alpha">
+            <h3>Easier to Use</h3>
+            <p>An entirely revamped administrative interface makes getting started with Drupal easier.</p>
+          </div>
+          <div class="grid-3">
+            <h3>More Flexible</h3>
+            <p>Define your own content structure, add multimedia, forms, create your own modules for extra functionality or use one of over 800 we've upgraded for Drupal 7 already.</p>
+          </div>
+          <div class="grid-3">
+            <h3>More Scalable</h3>
+            <p>Your Drupal 7 site will be fast, responsive and able to handle huge amounts of traffic thanks to improved JavaScript and CSS optimization, better caching and more.</p>
+          </div>
+          <div class="grid-3 omega">
+            <h3>Open source</h3>
+            <p>Come for the software, stay for the community.  With thousands of contributors involved, Drupal and its themes, modules, and distributions are continuously improved.</p>
+          </div>
+        </div>        
+      </div> <!-- /#header-highlight-inner -->
+    </div> <!-- /#header-highlight -->
     
     
   </div> <!-- /#header -->
@@ -205,7 +231,7 @@ h3 {font-weight: bold;}
       <div id="column-left" class="grid-12">
 
 
-<div class="grid-9 alpha clear">
+<div class="grid-9 alpha">
 
   <h2>Here's how to get started</h2>
   <iframe src="http://player.vimeo.com/video/18160688" width="689" height="405"></iframe>
