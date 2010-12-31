@@ -16,6 +16,58 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoin
 h3 {font-weight: bold;}
 .grid-3 {margin-top: 28px; margin-bottom: 28px;}
 #page-title {margin-top: 48px;}
+#header {
+  height: 612px; 
+  background-color: #f00; 
+  background: url('header-bg.jpg') repeat-x center;
+}
+#header-feature {padding-top: 1.6em;}
+#header-feature h1, #header-feature h2 {color: #fff;}
+
+#header-feature h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: .04em;
+  margin-bottom: 0.8em;
+}
+#header-feature h2 {
+  font-weight: 200;
+  font-size: 1.4em;
+  letter-spacing: .1em;
+  line-height: 1.4em;
+}
+#header-feature img {
+  margin-top: 2em;
+}
+#header-feature .grid-12 {
+  padding-left: 10px; 
+  margin-left: 0px; 
+  margin-right: 0px; 
+  background: #293640;
+  background: url('gray-gradient.png');
+  background: -moz-linear-gradient(100%, 100%, 90deg, #3f4a51, #293640); 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3f4a51), to(#293640));
+  position: relative; 
+  height: 171px;
+  top: 24px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+#header-feature .grid-12 h3 {
+  color: #fff;
+  text-shadow: #000 2px 2px 0px;
+  margin-top: -10px;
+  letter-spacing: .10em;
+  font-weight: 400;
+}
+
+#header-feature .grid-12 p {
+  color: #fff;
+}
+
+#nav-masthead {
+  border-bottom: 1px solid #227ebf;
+}
 </style>
 </head>
 
@@ -55,7 +107,7 @@ h3 {font-weight: bold;}
  <label for="edit-search-theme-form-1">Search Drupal.org </label>
  <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
 </div>
-  <input type="image" id="search-theme-form-submit" src="/sites/all/themes/bluecheese/images/btn-search.png" alt="Search" name="op" />
+  <input type="image" id="search-theme-form-submit" src="btn-search.png" alt="Search" name="op" />
   <div id="search-theme-form-advanced"><fieldset class=" collapsible collapsed"><legend>Refine your search</legend><div class="form-radios"><div class="form-divider"><div class="form-item" id="edit-meta-type--wrapper">
  <label class="option" for="edit-meta-type-"><input type="radio" id="edit-meta-type-" name="meta_type" value=""  checked="checked"  class="form-radio" /> All</label>
 </div>
@@ -91,8 +143,42 @@ h3 {font-weight: bold;}
         <ul><li class="homepage first"><a href="/home">Drupal Homepage</a></li>
 <li class="dashboard last"><a href="/user/138216/dashboard">Your Dashboard</a></li>
 </ul><div id="userinfo"><a href="http://drupal.org/user">Logged in as karschsp</a> <a href="http://drupal.org/logout">Logout</a></div>      </div> <!-- /#nav-masthead -->
-
+    
+    <div id="header-feature" class="grid-12">
+      <div class="grid-6 alpha">
+        <h1><strong>Drupal 7</strong> &ndash; Friendly but powerful</h1>
+        <h2>The Drupal community is proud to present our best work yet &ndash;
+          a friendlier and more powerful, free software package that can be used
+          to build nearly any kind of website, from blogs and micro-sites to
+          collaborative social communities.</h2>
+          <a href="#" class="link-button" style="margin-top: 24px;"><span>Get Started with Drupal</span></a>
+      </div>
+      <div class="grid-6 omega">
+        <img src="examiner-thumbnail.png" alt="Runs on Drupal 7: Examiner.com" />
+      </div>
+      <div class="grid-12">
+        <div class="grid-3 alpha">
+          <h3>Easier to Use</h3>
+          <p>An entirely revamped administrative interface makes getting started with Drupal easier.</p>
+        </div>
+        <div class="grid-3">
+          <h3>More Flexible</h3>
+          <p>Define your own content structure, add multimedia, forms, create your own modules for extra functionality or use one of over 800 we&apos;ve upgraded for Drupal 7 already.</p>
+        </div>
+        <div class="grid-3">
+          <h3>More Scalable</h3>
+          <p>Your Drupal 7 site will be fast, responsive and able to handle huge amounts of traffic thanks to improved JavaScript and CSS optimization, better caching and more.</p>
+        </div>
+        <div class="grid-3 omega">
+          <h3>Open source</h3>
+          <p>Come for the software, stay for the community.  With thousands of contributors involved, Drupal and its themes, modules, and distributions are continuously improved.</p>
+        </div>
+      </div>
+    </div> <!-- /#header-feature -->
+    
     </div> <!-- /#header-inner -->
+    
+    
   </div> <!-- /#header -->
 
   <div id="page" class="container-12 clear-block">
@@ -103,7 +189,7 @@ h3 {font-weight: bold;}
                   <div id="page-title-tools" class="clear-block">
 
             <div class="grid-8 alpha">
-                                                <h1 id="page-title" class="title">Drupal 7 – Easier and more powerful than ever</h1>
+                                                
                                          </div>
 
                           <div id="page-tools" class="grid-4 omega">
@@ -117,31 +203,6 @@ h3 {font-weight: bold;}
       </div> <!-- /#page-heading -->
 
       <div id="column-left" class="grid-12">
-<div class="grid-12 alpha omega" style="margin-top: 10px;">
-  <img src="d7-screenshot.png" style="float: right; margin-left: 20px; margin-top: 24px;" alt="Drupal 7 Screenshot" />
-  <h2>Ready and able to drive your most demanding web projects with ease, from blogs and micro-sites to collaborative social communities.</h2>
-  <h2>After two and a half years of development by over 1,000 contributors, we proudly present Drupal 7.</h2>
-  <a href="#" class="link-button" style="margin-left: 100px; margin-top: 24px;"><span>Download Drupal 7</span></a>
-</div>
-
-<div class="grid-3 alpha">
-  <h3>Easier to Use</h3>
-  <p>An entirely revamped administrative interface makes getting started with Drupal easier. </p>
-</div>
-<div class="grid-3">
-  <h3>More Flexible</h3>
-  <p>Define your own content structure, add multimedia, forms, create your own modules for extra functionality or use one of over 800 we've upgraded for Drupal 7 already.</p>
-  
-</div>
-<div class="grid-3">
-  <h3>More Scalable</h3>
-  <p>Your Drupal 7 site will be fast, responsive and able to handle huge amounts of traffic thanks to improved JavaScript and CSS optimization, better caching and more.</p>
-  
-</div>
-<div class="grid-3 omega">
-  <h3>Open source</h3>
-  <p>Come for the software, stay for the community. With thousands of contributors involved, Drupal and its themes, modules and distrubtions are continiously improved.</p>
-</div>
 
 
 <div class="grid-9 alpha clear">
