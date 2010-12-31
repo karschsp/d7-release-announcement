@@ -18,8 +18,8 @@ h3 {
 }
 
 .grid-3 {
-  margin-top: 28px; 
-  margin-bottom: 28px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
 }
 
 #page-title {margin-top: 48px;}
@@ -63,9 +63,9 @@ h3 {
   border-radius: 5px;
   -moz-border-radius: 5px;
   clear: both;
-  -moz-box-shadow: 0px 4px 2px #888; 
-  -webkit-box-shadow: 0px 4px 4px #ccc; 
-  box-shadow: 0px 4px 2px #888;  
+  -moz-box-shadow: 0px 2px 4px #888; 
+  -webkit-box-shadow: 0px 2px 4px #888; 
+  box-shadow: 0px 2px 4px #888;  
 }
 
 #header-highlight-inner .grid-3 {
@@ -91,6 +91,17 @@ h3 {
 #column-left {
   margin-top: 1.0em;
 }
+
+#video {
+  margin-bottom: 1.9em;
+}
+
+#requirements {
+  border-top: 1px solid #ddd;
+  margin-top: 2.0em;
+  padding-top: 3.0em;
+}
+
 </style>
 </head>
 
@@ -174,7 +185,7 @@ h3 {
           a friendlier and more powerful, free software package that can be used
           to build nearly any kind of website, from blogs and micro-sites to
           collaborative social communities.</h2>
-          <a href="#" class="link-button" style="margin-top: 24px;"><span>Get Started with Drupal</span></a>
+          <a href="#" class="link-button" style="margin-top: 24px;"><span>Get Started with Drupal 7</span></a>
       </div>
       <div class="grid-6 omega">
         <img src="examiner-thumbnail.png" alt="Runs on Drupal 7: Examiner.com" />
@@ -186,11 +197,11 @@ h3 {
       <div id="header-highlight-inner" class="grid-12">
           <div class="grid-3 alpha">
             <h3>Easier to Use</h3>
-            <p>An entirely revamped administrative interface makes getting started with Drupal easier.</p>
+            <p>An entirely revamped administrative interface will make your daily tasks easier to find and carry out.</p>
           </div>
           <div class="grid-3">
             <h3>More Flexible</h3>
-            <p>Define your own content structure, add multimedia, forms, create your own modules for extra functionality or use one of over 800 we've upgraded for Drupal 7 already.</p>
+            <p>[needs work]</p>
           </div>
           <div class="grid-3">
             <h3>More Scalable</h3>
@@ -230,88 +241,92 @@ h3 {
 
       <div id="column-left" class="grid-12">
 
+<div id="video" class="grid-12">
+  <div class="grid-9 alpha">
 
-<div class="grid-9 alpha">
+    <h2>Take a tour</h2>
+    <iframe src="http://player.vimeo.com/video/18160688" width="689" height="405"></iframe>
 
-  <h2>Here's how to get started</h2>
-  <iframe src="http://player.vimeo.com/video/18160688" width="689" height="405"></iframe>
+  </div>
+  <div class="grid-3 omega">
+    <h3>Installation &amp; Upgrade</h3>
+    <p>[Needs work]</p>
 
+    <ul>
+      <li>- <a href="http://drupal.org/documentation/install/basic">Basic installation guide</a></li>
+      <li>- <a href="http://drupal.org/getting-started/7/admin">Drupal 7 Administrator's Guide</a></li>
+      <li class="last">- <a href="http://drupal.org/documentation/upgrade/6/7">Upgrade guide</a></li>
+    </ul>
+    
+    <p style="margin-top: .692em;">Want to learn more about Drupal 7 modules and theming API?  Check out <a href="#">Drupal 7 for developers</a>.</p>
+  </div>
 </div>
-<div class="grid-3 omega">
-  <h3>Installation &amp; Upgrade</h3>
-  <p>You are now able to install Drupal 7!  <a href="http://drupal.org/start">Get started</a> or <a href="http://drupal.org/documentation/upgrade/6/7">upgrade</a>.</p>
-
-  <ul>
-    <li><a href="http://drupal.org/documentation/install/basic">Basic installation guide</a></li>
-    <li><a href="http://drupal.org/getting-started/7/admin">Drupal 7 Administrator's Guide</a></li>
-    <li class="last"><a href="http://drupal.org/documentation/upgrade/6/7">Upgrade guide</a></li>
-  </ul>
-  
-  <p style="margin-top: .692em;">Want to learn more about Drupal 7 modules and theming API?  Check out <a href="#">Drupal 7 for developers</a>.</p>
-</div>
-
-
-<div class="grid-3 alpha clear">
-  <h3>Test driven development</h3>
-  <p>Drupal 7 has a automated testing framework with over 30,000 built in tests, allowing for <a href="http://qa.drupal.org/">continuous integration testing</a> of all Drupal core patches and selected contributed modules on Drupal.org.</p>
-</div>
-<div class="grid-3">
-  <h3>Improved Database support</h3>
-  <p>We've added a new database layer, adding SQLite support out of the box in addition to MySQL/MariaDB and PostgreSQL. There are also drivers for <a href="http://drupal.org/project/sqlsrv">MS SQL Server</a> and <a href="http://drupal.org/project/oracle">Oracle</a>.</p>  
-</div>
-<div class="grid-3">
-  <h3>Better theming</h3>
-  <p>Drupal 7 brings fine-grained control over page elements with new Render API, better context capabilities and template options, ability to use alter hooks in themes. Our theme layer now is better than ever!</p>
-  
-</div>
-<div class="grid-3 omega">
-  <h3>Flexible content</h3>
-  <p>Define your own content types with the new Field system. Build your feature-set as fields that you can use on users, nodes, comments, taxonomy terms and more.</p>
-</div>
+<h2 class="clear">Features</h2>
+  <div class="grid-3 alpha">
+    <h3>Flexible content</h3>
+    <p>Define your own content types with the new Field system by attaching custom data fields to Drupal entities like users, content nodes, comments, taxonomy terms and more.</p>
+  </div>
+  <div class="grid-3">
+    <h3>Better theming</h3>
+    <p>The Drupal 7 theme layer gives designers more control over page elements with new Render API, better context capabilities and template options, and the ability to use alter hooks in themes.</p>  
+  </div>
+  <div class="grid-3">
+    <h3>Accessibility</h3>
+    <p>[Needs work]</p>
+    
+  </div>
+  <div class="grid-3 omega">
+    <h3>Images and files</h3>
+    <p>Drupal 7 supports image handling out of the box. Resize and alter your images with ease. Combine private/public files and store files using services such as Amazon S3.</p>
+  </div>
 
 
-<div class="grid-3 alpha clear">
-  <h3>Better distribution support</h3>
-  <p>With version-specific dependencies, installation profiles as modules, and better data exportability, Drupal 7 makes the perfect platform for polished products based on the framework.</p>
-</div>
-<div class="grid-3">
-  <h3>Images and files</h3>
-  <p>Drupal 7 supports image handling out of the box. Resize and alter your images with ease. Combine private/public files and store files using services such as Amazon S3.</p>
-</div>
-<div class="grid-3">
-  <h3>Accessibility</h3>
-  <p>Drupal 7 sports numerous accessibility improvements including HTML alternatives to JavaScript-based administrative interfaces, utility CSS classes for hiding page elements consistently, 'Skip to navigation' links, icons, and a variety of other WCAG AA-level items.</p>
-</div>
-<div class="grid-3 omega">
-  <h3>Extend</h3>
-  <p>Thanks to the #D7CX movement, over 800 modules are available for Drupal 7, including Views, Pathauto, and WYSIWYG, with more on the way every day.</p>
+  <div class="grid-3 alpha clear">
+    <h3>Automated testing</h3>
+    <p>Drupal 7 has an automated testing framework with over 30,000 built in tests, allowing for <a href="http://qa.drupal.org/">continuous integration testing</a> of all Drupal core patches and selected contributed modules on Drupal.org.</p>
+  </div>
+  <div class="grid-3">
+    <h3>Improved Database support</h3>
+    <p>Drupal 7 has a new database layer, adding SQLite support in addition to MySQL/MariaDB and PostgreSQL. There are also modules to provide support for <a href="http://drupal.org/project/sqlsrv">MS SQL Server</a> and <a href="http://drupal.org/project/oracle">Oracle</a>.</p>
+  </div>
+  <div class="grid-3">
+    <h3>Better distribution support</h3>
+    <p>Installation profiles can customize Drupal's user interface, manage their own version upgrades, track dependencies more efficiently, and capture more configuration settings in code.</p>
+  </div>
+  <div class="grid-3 omega">
+    <h3>Extend</h3>
+    <p>[Needs work]</p>
 
-</div>
+  </div>
 
 
-<div class="grid-6 alpha clear">
-  <h3>See Drupal 7 in action</h3>
-  <p>Drupal 7 is already in use on some high profile sites. Some examples:</p>
-  <ul>
-  <li><a href="http://www.examiner.com/">Examiner.com</a></li>
-  <li><a href="http://sampler.drupalgardens.com/">Drupal Gardens</a></li>
-  <li><a href="http://www.subhublite.com/">SubHub</a></li>
-  <li><a href="http://chicagopublicmedia.org/">Chicago Public Meda</a></li>
-  <li><a href="http://www.sagmeister.com/">Steven Sagmeister</a></li>
-  </ul>
-</div>
+<div class="grid-12 alpha omega" id="requirements">
+  <div class="grid-6 alpha">
+    <h3>See Drupal 7 in action</h3>
+    <p>Drupal 7 is already in use on some high profile sites. Some examples:</p>
+    <ul>
+    <li><a href="http://www.examiner.com/">Examiner.com</a></li>
+    <li><a href="http://sampler.drupalgardens.com/">Drupal Gardens</a></li>
+    <li><a href="http://www.subhublite.com/">SubHub</a></li>
+    <li><a href="http://chicagopublicmedia.org/">Chicago Public Meda</a></li>
+    <li><a href="http://www.sagmeister.com/">Steven Sagmeister</a></li>
+    </ul>
+  </div>
 
-<div class="grid-6 omega">
-  <h3>Requirements</h3>
-  <p>At a minimum, you must have the following to install Drupal 7:</p>
-  <ul>
-    <li><strong>Web Server</strong>: Apache (recommended), Nginx, Lighttpd, or Microsoft IIS</li>
-    <li><strong>Database</strong>: MySQL 5.0.15 and higher, PostgreSQL 8.3 and higher, SQLite 3.x</li>
-    <li><strong>PHP</strong>: 5.2.x and higher</li>
-    <li><strong>Memory</strong>: 32MB</li>
-  </ul>
-  <p>
-    <a href="http://drupal.org/requirements">More information</a></p>
+  <div class="grid-6 omega">
+    <h3>Requirements</h3>
+    <p>At a minimum, you must have the following to install Drupal 7:</p>
+    <ul>
+      <li><strong>Web Server</strong>: Apache (recommended), Nginx, Lighttpd, or Microsoft IIS</li>
+      <li><strong>Database</strong>: MySQL 5.0.15 and higher, PostgreSQL 8.3 and higher, SQLite 3.x</li>
+      <li><strong>PHP</strong>: 5.2.x and higher</li>
+      <li><strong>Memory</strong>: 32MB</li>
+    </ul>
+    <br />
+    [Needs work]
+    <p>
+      <a href="http://drupal.org/requirements">More information</a></p>
+  </div>
 </div>
         
         
