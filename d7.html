@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+  <title>Drupal 7 | drupal.org</title>
+  <link type="text/css" rel="stylesheet" media="all" href="http://drupal.org/files/css/css_4c900206288bb4d8ce4d80074103d710.css" />
+  <script type="text/javascript" src="http://drupal.org/files/js/js_bea8e98ee87e988f05b3d860c520e9cd.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|avi|csv|doc|exe|flv|gif|gz|jpe?g|js|mp(3|4|e?g)|mov|pdf|phps|png|ppt|rar|sit|tar|torrent|txt|wma|wmv|xls|xml|zip"},"html5UserGeolocationPrecision":"1","ahah":{"save-tracker2_user":{"url":"\/user\/138216\/dashboard\/block\/tracker2_user","event":"click","keypress":null,"wrapper":"homebox-block-tracker2_user","selector":"#save-tracker2_user","effect":"none","method":"replaceWith","progress":{"type":"throbber"},"button":{"op":"Save"}},"save-project_issue_issue_cockpit-1":{"url":"\/user\/138216\/dashboard\/block\/project_issue_issue_cockpit-1","event":"click","keypress":null,"wrapper":"homebox-block-project_issue_issue_cockpit-1","selector":"#save-project_issue_issue_cockpit-1","effect":"none","method":"replaceWith","progress":{"type":"throbber"},"button":{"op":"Save"}},"edit-save":{"url":"\/homebox\/js\/dashboard\/save","event":"click","keypress":null,"wrapper":null,"selector":"#edit-save","effect":"none","method":"replace","progress":{"type":"throbber"},"button":{"op":"Save"}},"edit-submit":{"url":"\/drupalorg_set_home_js","event":"click","keypress":null,"wrapper":"drupalorg-set-home","selector":"#edit-submit","effect":"none","method":"replaceWith","progress":{"type":"throbber"},"button":{"op":"Use Default Homepage"}}}});
+//--><!]]>
+</script>
+<style type="text/css">
+body {
+  background-color: #fff;  
+  background: -moz-linear-gradient(100% 100% 90deg, #f6f5f0, #fff);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f6f5f0), to(#fff));  
+  background-position-x: 612px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.grid-3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.link-button {
+  margin-top: 32px;
+}
+
+#header-highlight .grid-3 {
+  margin-top: 28px; 
+  margin-bottom: 28px;
+} 
+
+#page-title {
+  margin-top: 48px;
+}
+
+#header {
+  height: 612px; 
+  background-color: #f00; 
+  background: url('header-bg.jpg') repeat-x center;
+}
+
+#header-feature {padding-top: 1.6em; margin-top: -480px}
+
+#header-feature h1, #header-feature h2 {color: #fff;}
+
+#header-feature h1 {
+  font-size: 2.2em;
+  font-weight: normal;
+  letter-spacing: .04em;
+  margin-bottom: 0.8em;
+}
+
+#header-feature h2 {
+  font-weight: 300;
+  font-size: 1.4em;
+  letter-spacing: .05em;
+  line-height: 1.4em;
+}
+
+#header-feature img {
+  margin-top: 2em;
+}
+
+#header-highlight {
+  background: #293640;
+  background: url('gray-gradient.png');
+  background: -moz-linear-gradient(100%, 100%, 90deg, #3f4a51, #293640); 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3f4a51), to(#293640));
+  height: 171px;
+  position: relative; 
+  top: -112px; 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  clear: both;
+  -moz-box-shadow: 0px 2px 4px #888; 
+  -webkit-box-shadow: 0px 2px 4px #888; 
+  box-shadow: 0px 2px 4px #888;  
+}
+
+#header-highlight-inner .grid-3 {
+  margin-top: 14px;
+}
+
+#header-highlight-inner h3 {
+  color: #fff;
+  text-shadow: #000 2px 2px 0px;
+  margin-top: 0;
+  letter-spacing: .10em;
+  font-weight: bold;
+}
+
+#header-highlight-inner p {
+  color: #fff;
+}
+
+#nav-masthead {
+  border-bottom: 1px solid #227ebf;
+}
+
+#column-left {
+  margin-top: 3.0em;
+}
+
+#video {
+  margin-top: -4px;
+  margin-bottom: 2.4em;
+}
+
+#video h2 {
+  font-size: 2.0em;
+  margin-bottom: 1.0em;
+}
+
+#video .grid-3 {
+  margin-top: 4.0em;
+}
+
+ul#doc-list {
+  margin-bottom: 12px;
+}
+
+h2#heading-features {
+  margin-bottom: 0em;
+  font-size: 2.0em;
+}
+
+#requirements {
+  border-top: 1px solid #ddd;
+  margin-top: 2.0em;
+  padding-top: 2.0em;
+}
+
+#requirements ul {
+  margin-bottom: 12px;
+}
+
+</style>
+<!--[if IE 7]>
+<style type="text/css">
+#video {
+  margin-top: 30px;
+}
+</style>
+<![endif]-->
+</head>
+
+<body class="not-front logged-in page-user no-sidebars">
+  <div id="skip-links">
+    <a href="#content">Skip to main content</a>
+    <a href="#search">Skip to search</a>
+  </div>
+
+  <div id="header" class="clear-block">
+    <div id="header-inner" class="container-12">
+
+      <div id="nav-header" class="grid-12">
+        <ul><li class="getting-started first"><a href="/start" title="Getting Started with Drupal">Get Started</a></li>
+<li class="forum"><a href="/community" title="Drupal Community and Support">Community &amp; Support</a></li>
+<li class="handbooks"><a href="/documentation" title="Drupal Documentation">Documentation</a></li>
+<li class="project"><a href="/download" title="Download and Extend Drupal">Download &amp; Extend</a></li>
+<li class="marketplace"><a href="/drupal-services" title="Buy Drupal Products and Services">Marketplace</a></li>
+
+<li class="about last"><a href="/about" title="About Drupal">About</a></li>
+</ul>      </div> <!-- /#nav-header -->
+
+      <div id="header-content" class="grid-12">
+
+        <div id="header-left" class="grid-7 alpha">
+          <div id="header-left-inner" class="grid-6 alpha">
+            <div id="site-name">
+              <a href="http://drupal.org" title="Drupal">Drupal</a>
+
+            </div>
+                      </div> <!-- /#header-left-inner -->
+        </div> <!-- /#header-left -->
+
+        <div id="header-right" class="grid-5 omega">
+          <div id="header-right-inner">
+            <form action="/user/138216/dashboard"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+
+ <label for="edit-search-theme-form-1">Search Drupal.org </label>
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+  <input type="image" id="search-theme-form-submit" src="/sites/all/themes/bluecheese/images/btn-search.png" alt="Search" name="op" />
+  <div id="search-theme-form-advanced"><fieldset class=" collapsible collapsed"><legend>Refine your search</legend><div class="form-radios"><div class="form-divider"><div class="form-item" id="edit-meta-type--wrapper">
+ <label class="option" for="edit-meta-type-"><input type="radio" id="edit-meta-type-" name="meta_type" value=""  checked="checked"  class="form-radio" /> All</label>
+</div>
+<div class="form-item" id="edit-meta-type-module-wrapper">
+
+ <label class="option" for="edit-meta-type-module"><input type="radio" id="edit-meta-type-module" name="meta_type" value="module"   class="form-radio" /> Modules</label>
+</div>
+<div class="form-item" id="edit-meta-type-theme-wrapper">
+ <label class="option" for="edit-meta-type-theme"><input type="radio" id="edit-meta-type-theme" name="meta_type" value="theme"   class="form-radio" /> Themes</label>
+</div>
+</div><div class="form-item" id="edit-meta-type-documentation-wrapper">
+ <label class="option" for="edit-meta-type-documentation"><input type="radio" id="edit-meta-type-documentation" name="meta_type" value="documentation"   class="form-radio" /> Documentation</label>
+</div>
+
+<div class="form-item" id="edit-meta-type-forum-issues-wrapper">
+ <label class="option" for="edit-meta-type-forum-issues"><input type="radio" id="edit-meta-type-forum-issues" name="meta_type" value="forum-issues"   class="form-radio" /> Forums & Issues</label>
+</div>
+<div class="form-item" id="edit-meta-type-group-wrapper">
+ <label class="option" for="edit-meta-type-group"><input type="radio" id="edit-meta-type-group" name="meta_type" value="group"   class="form-radio" /> Groups</label>
+</div>
+</div></fieldset>
+</div>
+  <input type="hidden" name="form_build_id" id="form-c8311cd5b893fc3260fc48ad58755531" value="form-c8311cd5b893fc3260fc48ad58755531"  />
+
+<input type="hidden" name="form_token" id="edit-search-theme-form-form-token" value="c623269bfeb3ea7965752f696e0ba7d1"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+          </div> <!-- /#header-right-inner -->
+        </div> <!-- /#header-right -->
+
+      </div> <!-- /#header-content -->
+
+      <div id="nav-masthead" class="grid-12">
+
+        <ul><li class="homepage first"><a href="/home">Drupal Homepage</a></li>
+<li class="dashboard active last active"><a href="/user/138216/dashboard" class="active active">Your Dashboard</a></li>
+</ul><div id="userinfo"><a href="http://drupal.org/user">Logged in as karschsp</a> <a href="http://drupal.org/logout">Logout</a></div>      </div> <!-- /#nav-masthead -->
+
+    </div> <!-- /#header-inner -->
+  </div> <!-- /#header -->
+
+  <div id="page" class="container-12 clear-block">
+    <div id="page-inner">
+
+      <div id="page-heading" class="grid-12">
+
+                  <div id="page-title-tools" class="clear-block">
+
+            <div class="grid-8 alpha">
+                                              
+
+                                          </div>
+
+                          <div id="page-tools" class="grid-4 omega">
+                
+              </div> <!-- /#page-tools -->
+                      </div> <!-- /#page-title-tools -->
+
+                      <div id="nav-content" class="clear-block nav-content-dashboard">
+
+</div> <!-- /#nav-content -->
+
+          
+          
+          
+        
+      </div> <!-- /#page-heading -->
+      
+    <div id="header-feature" class="grid-12">
+      <div class="grid-6 alpha">
+        <h1><strong>Drupal 7</strong> - Friendly but powerful</h1>
+        <h2>The Drupal community is proud to present our best work yet -
+                  a friendlier and more powerful, open source content management platform that can be used
+                  to build nearly any kind of website, from blogs and micro-sites to
+                  collaborative social communities.</h2>
+          <a href="#" class="link-button"><span>Get Started with Drupal 7</span></a>
+      </div>
+      <div class="grid-6 omega">
+        <img src="examiner-thumbnail.png" alt="Runs on Drupal 7: Examiner.com" />
+      </div>
+    
+    </div>
+    
+    <div id="header-highlight" class="grid-16">
+      <div id="header-highlight-inner" class="grid-12">
+          <div class="grid-3 alpha">
+            <h3>Easier to Use</h3>
+            <p>An entirely revamped administrative interface will make your daily tasks easier to find and carry out, with many improvements for site builders and content editors. </p>
+          </div>
+          <div class="grid-3">
+            <h3>More Flexible</h3>
+            <p>Define your own content structure, menus, blocks, categories and much more. Also extend it with many themes and modules.</p>
+          </div>
+          <div class="grid-3">
+            <h3>More Scalable</h3>
+            <p>Your Drupal 7 site will be fast, responsive and able to handle huge amounts of traffic thanks to improved JavaScript and CSS optimization, better caching and more.</p>
+          </div>
+          <div class="grid-3 omega">
+            <h3>Open source</h3>
+            <p>Come for the software, stay for the community.  With thousands of contributors involved, Drupal and its themes, modules, and distributions are continuously improved.</p>
+          </div>
+        </div>        
+      </div> <!-- /#header-highlight-inner -->
+    </div> <!-- /#header-highlight -->     
+      <div id="column-left" class="grid-12">     
+<div id="video" class="grid-12 alpha omega">
+  <div class="grid-9 alpha">
+
+    <h2>Take a tour</h2>
+    <iframe src="http://player.vimeo.com/video/18352872?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="690" height="388"></iframe>
+
+  </div>
+  <div class="grid-3 omega">
+    <h3>Installation and Upgrade</h3>
+    <p>Get started with updated documentation for Drupal 7: from best practices and API documentation to upgrade guides and more.</p>
+
+    <ul id="doc-list">
+      <li><a href="http://drupal.org/documentation/install/basic">Installation guide</a></li>
+      <li><a href="http://drupal.org/getting-started/7/admin">Administration guide</a></li>
+      <li class="last"><a href="http://drupal.org/documentation/upgrade/6/7">Upgrade from Drupal 6</a></li>
+    </ul>
+    
+    <p>Want to learn more? See the <a href="http://drupal.org/documentation">documentation section</a>.</p>
+
+  </div>
+</div>
+<h2 class="clear" id="heading-features">Features</h2>
+  <div class="grid-3 alpha">
+    <h3>Flexible content</h3>
+    <p>Attach custom fields to content types, users, comments, taxonomy terms and more entities. These can now also be stored locally in SQL or NoSQL or remotely.</p>
+  </div>
+  <div class="grid-3">
+    <h3>Better theming</h3>
+    <p>The theme layer now gives designers more control over the page with the new Render API and alter hook capability. We've also added RDFa to provide semantic web functionality.</p>  
+  </div>
+  <div class="grid-3">
+    <h3>Accessible</h3>
+    <p>It's now easier to build highly accessible websites thanks to many front-end improvements. Additionally, administrative screens are now far more accessible.</p>
+    
+  </div>
+  <div class="grid-3 omega">
+    <h3>Images and files</h3>
+    <p>Image support is now part of core, including images as fields and image resizing and alteration. Private file handling is also more robust and can be used alongside public files.</p>
+  </div>
+
+
+  <div class="grid-3 alpha clear">
+    <h3>Automated testing</h3>
+    <p>A new automated testing framework with over 30,000 built in tests allows for <a href="http://qa.drupal.org/">continuous integration testing</a> of all Drupal core patches and contributed modules.</p>
+  </div>
+  <div class="grid-3">
+    <h3>Improved Database support</h3>
+    <p>A new database layer provides out-of-the-box support for SQLite, MySQL/MariaDB, and PostgreSQL. Also, <a href="http://drupal.org/project/sqlsrv">MS SQL Server</a> and <a href="http://drupal.org/project/oracle">Oracle</a> can be used with contributed modules.</p>
+
+  </div>
+  <div class="grid-3">
+    <h3>Better distribution support</h3>
+    <p>Installation profiles can customize the interface, manage their own version upgrades, more efficiently track dependencies, and capture more configuration settings in code.</p>
+  </div>
+  <div class="grid-3 omega">
+    <h3>Extend</h3>
+    <p>Thanks to a great community effort, over 800 modules are available for Drupal 7, including <a href="http://drupal.org/project/webform">Webform</a>, <a href="http://drupal.org/project/pathauto">Pathauto</a> and <a href="http://drupal.org/project/wysiwyg">WYSIWYG</a>, with more on the way every day.</p>
+
+  </div>
+
+
+<div class="grid-12 alpha omega" id="requirements">
+  <div class="grid-6 alpha">
+    <h3>See Drupal 7 in action</h3>
+    <p>Drupal 7 is already in use on some high profile sites. Some examples:</p>
+    <ul>
+    <li><a href="http://www.examiner.com/">Examiner.com</a></li>
+    <li><a href="http://sampler.drupalgardens.com/">Drupal Gardens</a></li>
+    <li><a href="http://www.subhublite.com/">SubHub</a></li>
+    <li><a href="http://chicagopublicmedia.org/">Chicago Public Meda</a></li>
+    <li><a href="http://www.sagmeister.com/">Steven Sagmeister</a></li>
+    </ul>
+  </div>
+
+  <div class="grid-6 omega">
+    <h3>Requirements</h3>
+    <p>At a minimum, you must have the following to install Drupal 7:</p>
+    <ul>
+      <li><strong>Web Server</strong>: Apache (recommended), Nginx, Lighttpd, or Microsoft IIS</li>
+      <li><strong>Database</strong>: MySQL 5.0.15 and higher, PostgreSQL 8.3 and higher, or SQLite 3.x</li>
+      <li><strong>PHP</strong>: 5.2.x and higher</li>
+      <li><strong>Memory</strong>: 32MB</li>
+    </ul>
+    <p>The total file size of your Drupal installation will depend on what you add to your site. Additionally, a site with a number of commonly used modules enabled could require 64 MB of memory or more.</p>
+    <p>
+      <a href="http://drupal.org/requirements">More requirements information</a></p>
+  </div>
+</div>
+        
+        
+        
+        <div id="content" class="clear-block">
+                  </div> <!-- /#content -->
+
+      </div> <!-- /#column-left -->
+
+      
+          </div> <!-- /#page-inner -->
+  </div> <!-- /#page -->
+
+  <div id="footer">
+    <div id="footer-inner" class="container-12 clear-block">
+              <div id="footer-region" class="grid-12">
+          <div id="footer-region-inner" class="clear-block">
+            <div class="grid-footer alpha"><ul><li class="news first"><a href="/news">Drupal News</a></li>
+
+<li class="planet"><a href="/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="association"><a href="http://association.drupal.org/" title="News from association.drupal.org">Association News</a></li>
+<li class="security"><a href="/security" title="Advisories from the security team">Security Announcements</a></li>
+<li class="jobs last"><a href="http://groups.drupal.org/jobs" title="Jobs posted on groups.drupal.org">Jobs</a></li>
+</ul></div><div class="grid-footer"><ul><li class="community first"><a href="/community">Community &amp; Support</a></li>
+<li class="get-involved"><a href="/getting-involved" title="Learn how to contribute to the Drupal project">Getting Involved</a></li>
+<li class="marketplace"><a href="/drupal-services" title="People and organizations offering Drupal services">Marketplace</a></li>
+<li class="groups"><a href="http://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; Meetups</a></li>
+
+<li class="dcchicago"><a href="http://chicago2011.drupal.org/" title="DrupalCon chicago2011.drupal.org">DrupalCon Chicago 2011</a></li>
+<li class="dclondon last"><a href="http://london2011.drupal.org/" title="DrupalCon london2011.drupal.org">DrupalCon London 2011</a></li>
+</ul></div><div class="grid-footer"><ul><li class="get-started first"><a href="/start">Get Started</a></li>
+<li class="docs"><a href="/documentation" title="Guidebooks and documentation for working with Drupal">Documentation Home</a></li>
+<li class="install"><a href="/documentation/install" title="Guide for installing Drupal">Installation Guide</a></li>
+<li class="site-building"><a href="/documentation/build" title="Guide for building and extending Drupal sites">Site Building Guide</a></li>
+<li class="api last"><a href="http://api.drupal.org/" title="Drupal API Reference">api.drupal.org</a></li>
+</ul></div><div class="grid-footer"><ul><li class="download first"><a href="/download">Download &amp; Extend</a></li>
+
+<li class="download-core"><a href="/project/drupal" title="Download the latest version of the Drupal software">Drupal Core</a></li>
+<li class="download-modules"><a href="/project/modules" title="Download add-on features and functionality">Modules</a></li>
+<li class="download-themes"><a href="/project/themes" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="download-profiles last"><a href="/project/installation%2Bprofiles" title="Download a pre-packaged Drupal site">Installation Profiles</a></li>
+</ul></div><div class="grid-footer omega"><ul><li class="about first"><a href="/about">About</a></li>
+<li class="druplicon"><a href="/druplicon" title="Drupal&#039;s mascot">Druplicon</a></li>
+<li class="association-about"><a href="http://association.drupal.org/about" title="About the Drupal Association">The Drupal Association</a></li>
+<li class="advertise"><a href="http://association.drupal.org/advertising" title="How to advertise on Drupal.org">Advertise</a></li>
+<li class="drupalorg last"><a href="/taxonomy/term/13" title="About Drupal.org">Drupal.org</a></li>
+
+</ul></div>          </div> <!-- /#footer-region-inner -->
+        </div> <!-- /#footer-region -->
+                    <div id="footer-message" class="grid-12">
+          <div id="footer-message-inner" class="clear-block">
+            <p>Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net">Dries Buytaert</a>.</p>
+
+          </div> <!-- /#footer-message-inner -->
+        </div> <!-- /#footer-message -->
+          </div> <!-- /#footer-inner -->
+  </div> <!-- /#footer -->
+  <script type="text/javascript" src="http://drupal.org/files/js/js_961f695a4110ddb1078c223583a38eb2.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-2360451-1");pageTracker._setVar("authenticated user,documentation maintainer,CVS user");pageTracker._trackPageview();} catch(err) {}
+//--><!]]>
+</script>
+</body>
+</html>
+
